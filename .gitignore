@@ -1,0 +1,6 @@
+/node_modules
+/.react-router
+/build
+*.tsbuildinfo
+.env*.local
+.DS_Store
