@@ -1,0 +1,4 @@
+prettier --log-level error -c .
+react-router typegen
+tsc
+eslint

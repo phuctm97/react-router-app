@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "React Router",
+      "request": "launch",
+      "type": "node",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**",
+        "${workspaceFolder}/build/**"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}

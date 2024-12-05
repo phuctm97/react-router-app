@@ -1,0 +1,25 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.fixAll": "always" },
+  "conventionalCommits.gitmoji": false,
+  "conventionalCommits.promptScopes": false,
+  "conventionalCommits.promptFooter": false,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "**/.env*": "properties",
+    "**/.husky/*": "shellscript"
+  },
+  "files.exclude": {
+    "package-lock.json": true,
+    "node_modules": true,
+    ".husky/_": true,
+    ".react-router": true,
+    "build": true,
+    "**/*.tsbuildinfo": true
+  }
+}
