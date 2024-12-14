@@ -1,7 +1,10 @@
+import "@mantine/core/styles.css";
+
 import type { PropsWithChildren, ReactNode } from "react";
 
 import type { Route } from "./+types/root";
 
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import rtlDetect from "rtl-detect";
 
@@ -13,11 +16,12 @@ export function Layout({ children }: PropsWithChildren): ReactNode {
       <head>
         <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <ColorSchemeScript defaultColorScheme="auto" />
         <Meta />
         <Links />
       </head>
       <body>
-        {children}
+        <MantineProvider defaultColorScheme="auto">{children}</MantineProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
