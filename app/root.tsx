@@ -10,6 +10,10 @@ import rtlDetect from "rtl-detect";
 
 import config from "~/config.json";
 
+export const meta: Route.MetaFunction = () => [
+  { title: "React Router + Mantine" },
+];
+
 export function Layout({ children }: PropsWithChildren): ReactNode {
   return (
     <html dir={rtlDetect.getLangDir(config.locale)} lang={config.locale}>
